@@ -91,6 +91,7 @@ let quizStarted = false;
 nextButton.addEventListener("click", function () {
     if (!quizStarted) {
         startQuiz();
+        document.querySelector("h1").innerHTML = "THE TRIVIA TRAILS";
         quizStarted = true;
         nextButton.innerHTML = "Next";
     } else if (currentQuestionIndex < questions.length - 1) {
